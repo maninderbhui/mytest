@@ -1,1 +1,6 @@
 Hello team, hope you all are ok. I am really upset sir did not fix my putty issue.
+Also i have few questions
+1. when we creat user name and email in git local repo, Does it needs to match with our github username and email
+or it can be random name and email.
+
+2. i need more clarification on ssh key please.
