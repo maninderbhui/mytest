@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tg-deployment
+  namespace:  mytg
+  labels:
+    app: mydb
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: mydb
+  template:
+    metadata:
+      labels:
+        app: mydb
+    spec:
+      containers:
+      - name: mariadb
+        image: mariadb
+        ports:
+         - containerPort: 3306
+        env:
+         - name: MYSQL_ROOT_PASSWORD
+           value: redhat
